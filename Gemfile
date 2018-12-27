@@ -3,6 +3,14 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 
+#gem para testes
+gem 'rspec-rails', '~> 3.5'
+
+#gem para fazer chamadas REST de dentro do app. Usaremos para chamar o currency data feed
+gem 'rest-client'
+#gem para testes de chamada de api(não consome as cotas permitidas)
+gem 'webmock'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
 # Use postgresql as the database for Active Record
